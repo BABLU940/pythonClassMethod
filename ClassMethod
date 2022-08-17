@@ -1,13 +1,14 @@
-class First(): 
+class First(): # Class create
  
-    def __init__(self, n):
+    def __init__(self, n): # Class function create
         
-        self.n = n
+        self.n = n   # function to assign values to object properties
     
     def forLoop(self):
+    
         arr=[]
         for i in range(self.n):
-            arr.append(i)
+            arr.append(i) 
         return arr
         
     def isEven(self):
@@ -18,34 +19,34 @@ class First():
             return False
         
     def isOdd(self):
+    
         if(self.n % 2 != 0):
             return True
-            
         else:
             return False
             
     def whileLoop(self):
+    
         arr=[]
         while(self.n != 0):
-            
             arr.append(self.n)
-            self.n = self.n-1
-            
+            self.n = self.n-1  
         return arr
         
     def whileLoopResv(self, n): # n = 1
+    
         arr=[] 
         i = 0
         while(n>i):  # n = 1, i = 1
             arr.append(i)
             i = i+1
-        
         return arr
         
     
 n=int(input())
 
-firstObj = First(15)
+firstObj = First(15) # Class object Create
+
 print(firstObj)
 
 temp = firstObj.forLoop()
@@ -57,8 +58,15 @@ isOddResult = firstObj.isOdd()
 whileResv = firstObj.whileLoop()
 
 whileResult = firstObj.whileLoopResv(n)
-print(isEvenResult)
-print(isOddResult)
-print(whileResv)
-print(whileResult)
+
 print(temp)
+
+print(isEvenResult)
+
+print(isOddResult)
+
+print(whileResv)
+
+print(whileResult)
+
+
